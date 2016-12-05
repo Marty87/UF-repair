@@ -1,0 +1,199 @@
+/*========================   Menu   ==========================*/
+
+//--------------------------------------------------------------
+//                       Menu Styles
+//--------------------------------------------------------------
+.menu {
+  @include clearfix;
+  display: inline-block;
+  display: table;
+  width: 100%;
+  float: right;
+
+  > li {
+    position: relative;
+    // float: left;
+    display: table-cell;
+    width: 25%;
+
+    // & + li {
+    //   margin-left: 117px;
+    //   margin-left: 11%;
+    // }
+
+
+  }
+
+   li:first-child {
+      width: 20%;
+  }
+
+  li:last-child   {
+      width: 20%;
+  }
+
+   li:last-child a:after  {
+      content: none;
+  }
+
+
+
+  a {
+    position: relative;
+    display: block;
+    // padding: 0 22%;
+    height: 62px;
+    line-height: 62px;
+    color: #f1f1f1;
+    font-family: $font2;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+
+    &:hover {
+         text-decoration: none;
+         color: #086799;
+      }
+
+
+        &:after {
+          content:"";
+          position: absolute;
+          top: 27%;
+          right: 25%;
+          right: 0;
+          display: block;
+          width: 1px;
+          height: 29px;
+          background-color: #068bd1;
+          z-index: 2;
+      }
+    }
+
+    @media only screen and (max-width : 768px) {
+          a {
+            font-size: 11px;
+          }
+
+    }
+}
+
+//--------------------------------------------------------------
+//                     Menu item styles
+//--------------------------------------------------------------
+// .menu {
+
+//   &__item{
+
+//     &--link {
+//       color: #f1f1f1;
+//       font-family: $font2;
+//       font-size: 16px;
+//       line-height: 24px;
+//       text-transform: uppercase;
+
+
+//       &:hover {
+//         text-decoration: none;
+//         color: #7B7A7A;
+//       }
+//     }
+
+//     // .sfHover > a,
+//     // > a:hover {
+//     //   color: #7B7A7A;
+//     //   background: map-get($scheme, primary);
+//     // }
+//   }
+
+// }
+
+//--------------------------------------------------------------
+//                   Sub menu lvl1 styles
+//--------------------------------------------------------------
+// .submenu {
+//   display: none;
+//   position: absolute;
+//   top: 100%;
+//   width: 235px;
+//   margin-top: 10px;
+//   padding: 10px 0 10px;
+//   background: #FFF;
+//   z-index: 2;
+//   @include box-sizing(border-box);
+// }
+
+//--------------------------------------------------------------
+//                 Sub menu lvl1 item styles
+//--------------------------------------------------------------
+// .submenu {
+
+//   &__item {
+
+//     &--link {
+//       color: #FFF;
+//       background: map-get($scheme, secondary);
+//     }
+
+//     &.sfHover > a, > a:hover {
+//       color: #FFF;
+//       background: map-get($scheme, primary);
+//     }
+//   }
+// }
+
+//--------------------------------------------------------------
+//                   Sub menu lvl2 styles
+//--------------------------------------------------------------
+// .sub-submenu {
+//   position: static;
+//   top: 100%;
+//   width: auto;
+//   margin-top: 0;
+//   padding: 0;
+//   z-index: 4;
+// }
+
+//--------------------------------------------------------------
+//                 Sub menu lvl2 item styles
+//--------------------------------------------------------------
+// .sub-submenu {
+
+//   &__item {
+
+//     &--link {
+//       color: red;
+//       background: map-get($scheme, default);
+//     }
+
+//     &.sfHover > a, > a:hover {
+//       color: #FFF;
+//       background: map-get($scheme, primary);
+//     }
+//   }
+// }
+
+//--------------------------------------------------------------
+//                      sf-with-ul styles
+//--------------------------------------------------------------
+// .sf-menu > li > .sf-with-ul {
+//   position: relative;
+
+//   &:before {
+//     position: absolute;
+//     left: 50%;
+//     top: 62%;
+//     margin-left: -6px;
+//     content: $fa-caret-down;
+//     font: 400 12px/12px $fa;
+//   }
+// }
+
+//--------------------------------------------------------------
+//                        Responsive
+//--------------------------------------------------------------
+@media (max-width: 767px) {
+  .sf-menu {
+    display: none;
+  }
+}

@@ -1,0 +1,983 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Card</title>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mailform.css"/>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-migrate-1.2.1.js"></script>
+
+  <!--[if lt IE 9]>
+  <html class="lt-ie9">
+  <div style=' clear: both; text-align:center; position: relative;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
+      <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+    </a>
+  </div>
+  <script src="js/html5shiv.js"></script>
+  <![endif]-->
+
+ <script src='js/device.min.js'></script>
+
+</head>
+<body>
+<div class="page">
+
+<!--========================================================
+                            HEADER
+  =========================================================-->
+  <header class="header bl-hidden">
+      <div class="head-main row">
+        <div class="container">
+          <div class="inline-box col-w-100">
+              <div class="inline-box__cnt col-w-20 col-sm-w-25 pd-r-20 row">
+                  <div class="col-sm-12 col-xs-12">
+                    <div class="main-item main-item-1">
+                         <div class="icon">
+                            <img src="images/svg/town.svg" width="17" height="17"  alt="img">
+                        </div>
+                        <div class="city_name">Москва</div>
+                        <div class="list_btn"></div>
+                        <ul class="cities_list">
+                            <li><a href="#">Саранск</a></li>
+                            <li><a href="#">Москва</a></li>
+                            <li><a href="#">Казань</a></li>
+                            <li><a href="#">Санкт Петербург</a></li>
+                            <li><a href="#">Нижний Новгород</a></li>
+                            <li><a href="#">Пенза</a></li>
+                            <li><a href="#">Рузаевка</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="inline-box__cnt col-w-80 col-sm-w-75 row">
+                  <div class="col-sm-4 col-xs-4">
+                    <a href="#" class="main-item"><span><img src="images/head-icon2.png" alt="img"></span>Как оформить заказ?</a>
+                  </div>
+                  <div class="col-sm-4 col-xs-4 pd-l-10">
+                  <a href="#" class="main-item"><span><img src="images/head-icon3.png" alt="img"></span>Гарантия и возврат</a>
+                  </div>
+                  <div class="col-sm-4 col-xs-4 pd-l-10">
+                    <a href="#" class="main-item"><span><img src="images/head-icon4.png" alt="img"></span>Вопрос-ответ</a>
+                  </div>
+               </div>
+            </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="head-bottom row">
+            <div class="col-w-20 col-sm-w-25 pd-r-20 col-xs-4 col-sm-4">
+              <div class="header__brand brand">
+                <p class="brand__name">
+                  <a class="brand__name--link"  href="index.html"><img src="images/logo.png" alt="img"></a>
+                </p>
+              </div>
+            </div>
+            <div class="col-xs-8 col-sm-8 col-w-80 col-sm-w-75">
+              <div class="row">
+                <div class="col-xs-4 col-sm-4">
+                  <div class="info-search">
+                    <p>Экологические приборы,<br>дозиметры, тестеры.</p>
+                    <div class="work-time">
+                      <div class="time">
+                        <span class="icon-clock"></span>
+                        <div class="time_wrapp">
+                          <span>Режим работы</span>
+                          <div class="hours">
+                            <div class="bold">
+                              <span class="first">8 <small class="min1">30</small></span><hr>
+                              <span>20 <small class="min2">00</small></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                     </div>
+                     <!-- Search -->
+                    <div class="top_header__search_block">
+                        <form action="GET">
+                            <input type="search" placeholder="Поиск по сайту" class="search__input">
+                            <input type="submit" value="" class="search__submit">
+                        </form>
+                    </div>
+                    <!-- // Search -->
+                  </div>
+                </div>
+                  <div class="col-xs-4 col-sm-4 pd-l-10">
+                      <div class="top-contacts">
+                        <span class="text-1">звонок по россии бесплатный</span>
+                        <span class="for-client">Для клиентов из регионов:</span>
+                          <a href="callto:89457756622" class="tel-1">8 945 775 6622</a>
+
+                          <span class="for-client">Для клиентов из Москвы</span>
+                          <a href="callto:8800234234" class="tel-2">8 800 23 42 34</a>
+                          <a href="#" class="callback">заказать обратный звонок</a>
+                      </div>
+                  </div>
+                  <div class="col-xs-4 col-sm-4 pd-l-10 pd-sm-0">
+                    <div class="basket-head">
+                        <div class="bask-list">
+                          <span class="basket-icon"></span>
+                          <div class="basket-cnt">
+                            <span class="basket-title">ваша корзина</span>
+                              <ul>
+                                <li><span>Товаров:</span><span class="count">2</span></li>
+                                <li><span>Сумма:</span><span class="count">12 444 $</span></li>
+                              </ul>
+                          </div>
+                        </div>
+                        <a class="btn-basket btn">оформить заказ</a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+      </div>
+</header>
+  <!--========================================================
+                            CONTENT
+  =========================================================-->
+  <main class="main bl-hidden">
+  <section class="well well__01">
+    <div class="container">
+      <div class="content">
+        <div class="row">
+          <!-- Sidebar -->
+          <aside class="sidebar">
+          <!-- category -->
+          <div class="category">
+              <div class="category__title">
+                <h4>категории товаров:</h4>
+              </div>
+                <ul class="category__list">
+                  <li class="active"><span class="img-1"></span><a href="#">Лечение Лор-заболеваний</a></li>
+                  <li><span class="img-2"></span><a href="#">Лечение кожных заболеваний</a></li>
+                  <li><span class="img-3"></span><a href="#">Обеззараживание помещений и поверхностей</a></li>
+                </ul>
+            </div>
+            <!-- // category -->
+            <!-- widget  -->
+            <div class="widget">
+              <img src="images/widget.png" alt="img">
+            </div>
+            <!--// widget  -->
+          </aside>
+          <!--// Sidebar -->
+          <!-- Rightcol -->
+          <div class="right-cols">
+                <nav class="nav clearfix">
+                    <div class="icon-block"><a href="index.html"></a></div>
+                    <ul class="menu" data-type="navbar">
+                      <li class="menu__item menu__active">
+                        <a href="#top" class="menu__item--link menu__active--link">О компании</a>
+                      </li>
+                      <li class="menu__item">
+                        <a href="index-1.html" class="menu__item--link">Оплата и доставка</a>
+                      </li>
+                      <li class="menu__item">
+                        <a href="#s_2" class="menu__item--link">Статьи и обзоры</a>
+                      </li>
+                      <li class="menu__item">
+                        <a href="#s_3" class="menu__item--link">Акции</a>
+                      </li>
+                    </ul>
+                </nav>
+                <div class="breadcrumbs">
+                  <ul>
+                    <li><a class="prevCrumb" href="index.html">Главная</a></li>
+                    <li><span class="arwCrumb"></span></li>
+                    <li><a class="currentCrumb" href="#">Карточка товара</a></li>
+                  </ul>
+                </div>
+                <div class="product-card">
+                <!-- Gallery product -->
+                    <div class="product_tabs-1 row">
+                        <div class="tabs col-sm-4 col-xs-4">
+                            <div class="tabs__content active">
+                              <img class="content_img" src="images/gallery-product-big.jpg" alt="content" >
+                            </div>
+                            <div class="tabs__content ">
+                              <img class="content_img" src="images/gallery-product-big.jpg" alt="content">
+                            </div>
+                            <div class="tabs__content">
+                              <img class="content_img" src="images/gallery-product-big.jpg" alt="content">
+                            </div>
+                            <ul class="tabs__caption">
+                                <li class="active content_img_small" style="background-image: url(images/gallery-product.jpg)">
+                                 <!--  <div class="content_img_small" style="background-image: url(images/gallery-product.jpg)">
+                                  </div> -->
+                                </li>
+                                <li class="content_img_small" style="background-image: url(images/gallery-product.jpg)">
+                                  <!-- <div class="content_img_small" style="background-image: url(images/gallery-product.jpg)">
+                                  </div> -->
+                                </li>
+                                <li class="content_img_small" style="background-image: url(images/gallery-product.jpg)">
+                                  <!-- <div class="content_img_small" style="background-image: url(images/gallery-product.jpg)"> -->
+                                  <!-- </div> -->
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product-descr col-sm-8 col-xs-8 col-w-65 pd-l-20">
+                            <h2 class="descr-title">индикатор электромагнитных полей <br> соэкс импульс</h2>
+                          <span class="art-num">Артикул товара: 23 00 44</span>
+                          <h2 class="about-title">Сферы применения:</h2>
+                            <div class="about">
+                              <p>в особенности же рамки и место обучения кадров играет важную роль в формировании дальнейших </p>
+                              <p>в особенности же рамки и место обучения кадров играет важную роль в формировании дальнейших </p>
+                            </div>
+                            <div class="product-info clearfix">
+                              <span class="status">Товар в наличии</span>
+                                <div class="product_rate">
+                                    <span>Рейтинг:</span>
+                                    <ul class="rate-list">
+                                      <li><a href="#"></a></li>
+                                      <li><a href="#"></a></li>
+                                      <li><a href="#"></a></li>
+                                      <li><a href="#"></a></li>
+                                      <li><a href="#"></a></li>
+                                    </ul>
+                                </div>
+                              </div>
+                              <div class="product-bottom clearfix">
+                                <div class="product_price-box">
+                                    <h3 class="product_price__title">Цена сегодня:</h3>
+                                    <span class="old-price">7000 $</span>
+                                    <span class="new-price">5600 $</span>
+                                </div>
+                                <div class="product_right clearfix">
+                                    <div class="garant"><span class="icon"><img src="images/guarant-icon.png" alt=""></span><span class="cnt">Гарантия <br> 1год</span></div>
+                                    <div class="madein"><span class="icon"><img src="images/flag-icon.png" alt=""></span><span class="cnt">Cделано <br> в России</span></div>
+                                </div>
+                              </div>
+                              <div class="product-btn-box">
+                                <a href="#" class="btn-2">В корзину</a>
+                                <a href="" class="btn-3">Купить в 1 клик</a>
+                              </div>
+                          </div>
+                      </div>
+                      <!--// Gallery product -->
+                      <!-- Resp-tabs -->
+                      <div class="resp-tabs">
+                          <ul class="resp-tabs-list">
+                            <li><h2 class="tabs-title">Описание</h2></li>
+                            <li><h2 class="tabs-title">Тех.характеристики</h2></li>
+                            <li><h2 class="tabs-title">Отзывы</h2></li>
+                          </ul>
+                          <div class="resp-tabs-container">
+                            <div class="tabs_cnt">
+                              <h2 class="cnt-title">Описание товара</h2>
+                                <p class="tabs_cnt_description">Жили у бабуси Два веселых гуся:Один — серый,Другой — белый —Два веселых гуся.Вытянули шеи —У кого длиннее? Один — серый,Другой — белый —У кого длиннее?Мыли гуси лапкиВ луже у канавки.Один — серый,Другой — белый —Спрятались в канавке.Вот кричит бабуся:Ой, пропали гуси!Один — серый,Другой — белый —Гуси мои, гуси. Выходили гуси Кланялись бабусе Один — серый Другой — белый  Кланялись бабусе.</p>
+                            </div>
+                            <div class="tabs_cnt">
+                               <ul class="tabs-list_product">
+                                    <li><span>Наименование</span><span>Индикатор Соэкс</span></li>
+                                    <li><span>Наименование</span><span>Индикатор Соэкс</span></li>
+                                    <li><span>Наименование</span><span>Индикатор Соэкс</span></li>
+                                    <li><span>Наименование</span><span>Индикатор Соэкс</span></li>
+                                    <li><span>Наименование</span><span>Индикатор Соэкс</span></li>
+                                    <li><span>Наименование</span><span>Индикатор Соэкс</span></li>
+                                    <li><span>Наименование</span><span>Индикатор Соэкс</span></li>
+                                    <li><span>Наименование</span><span>Индикатор Соэкс</span></li>
+                                    <li><span>Наименование</span><span>Индикатор Соэкс</span></li>
+                                    <li><span>Наименование</span><span>Индикатор Соэкс</span></li>
+                                    <li><span>Наименование</span><span>Индикатор Соэкс</span></li>
+                                </ul>
+                              </div>
+                            <div class="tabs_cnt">
+                                <h2 class="cnt-title">Оставить отзыв</h2>
+                                <p>Оставить отзыв.Задача организации, в особенности же рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развития. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции представляет собой интересный . Задача организации, в особенности же рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развития. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции. представляет собой интересный .</p>
+                                  <div class="review-form feedback-form">
+                                   <form>
+                                      <div class="input-block clearfix">
+                                        <div class="left-block">
+                                          <input type="text" placeholder="Ваше имя">
+                                          <input type="text" placeholder="E-mail" class="offset-20">
+                                        </div>
+                                        <div class="right-block pd-l-15">
+                                          <div class="input-block">
+                                            <textarea placeholder="Сообщения"></textarea>
+                                            <div class="input-block clearfix">
+                                                <input type="submit" value="Отправить" class="blue-btn">
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </form>
+                                </div>
+                                <div class="testimonials">
+                                    <div class="box clearfix">
+                                      <div class="box__aside">
+                                        <div class="img"></div>
+                                        <span class="date">12.12.12</span>
+                                      </div>
+                                      <div class="box__cnt">
+                                        <span class="name">Иванов Иван Иванович</span>
+                                        <p class="quote">Задача организации, в особенности же рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развития. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции представляет собой интересный .</p>
+                                      </div>
+                                    </div>
+                                    <div class="box clearfix">
+                                      <div class="box__aside">
+                                        <div class="img"></div>
+                                        <span class="date">12.12.12</span>
+                                      </div>
+                                      <div class="box__cnt">
+                                        <span class="name">Иванов Иван Иванович</span>
+                                        <p class="quote">Задача организации, в особенности же рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развития. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции представляет собой интересный .</p>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="social">
+                                  <h4>Поделиться:</h4>
+                                 <ul class="social-list">
+                                    <li class="social-list__item">
+                                      <a href="#" class="social-list__item--link first"></a>
+                                    </li>
+                                    <li class="social-list__item">
+                                      <a href="#" class="social-list__item--link second"></a>
+                                    </li>
+                                    <li class="social-list__item">
+                                      <a href="#" class="social-list__item--link third"></a>
+                                    </li>
+                                     <li class="social-list__item">
+                                      <a href="#" class="social-list__item--link fourth"></a>
+                                    </li>
+                                  </ul>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <!-- //resp-tabs -->
+                      <div class="download">
+                        <div class="instruction"><a href="#">Скачать инструкцию <br>по применению</a></div>
+                        <div class="certificat"><a href="#">Сертификат Соответсвия</a></div>
+                      </div>
+                      <div class="banner-box">
+                        <div class="banner"><a href="#"><img src="images/banner.jpg" height="156" alt="img"></a></div>
+                          <div class="box-2 clearfix">
+                              <div class="box-2__aside">
+                                  <div class="img"></div>
+                              </div>
+                                <div class="box-2__cnt">
+                                    <p class="slogan">Если у вас остались вопросы,звоните прямо сейчас</p>
+                                    <div class="box-2-btm clearfix">
+                                      <div class="bottom-tel">
+                                        <a href="callto:89457756622" class="tel-1">8 945 775 6622</a>
+                                        <span>Звонок по России бесплатный.</span>
+                                      </div>
+                                      <div class="bottom-time">
+                                        <span>Без выходных</span>
+                                        <div class="hours">
+                                          <div class="bold">c
+                                            <span>10<small>00</small></span> до
+                                            <span>20 <small>00</small></span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="title-block clearfix"><h1>Похожие товары</h1></div>
+                        <div class="section">
+                          <div class="product-carousel">
+                            <div class="item">
+                                <div class="product">
+                                  <div class="product__name">
+                                    <span>Индикатор электромагнитных полей соэкс импульс</span>
+                                  </div>
+                                  <div class="product__image">
+                                    <img src="images/product.jpg" alt="img">
+                                  </div>
+                                  <div class="product_rate">
+                                    <ul class="rate-list">
+                                      <li><a href="#"></a></li>
+                                      <li><a href="#"></a></li>
+                                      <li><a href="#"></a></li>
+                                      <li><a href="#"></a></li>
+                                      <li><a href="#"></a></li>
+                                    </ul>
+                                  </div>
+                                  <div class="product__bottom">
+                                    <div class="price">
+                                      <span>5600 $</span>
+                                      <a href="" class="btn-product">Купить в 1 клик</a>
+                                    </div>
+                                    <div class="product-cart">
+                                      <a href="#" class="shoping-cart-link"></a>
+                                      <span>В корзину</span>
+                                    </div>
+                                    <a href="#" class="btn-hide">В корзину</a>
+                                  </div>
+                                </div>
+                             </div>
+                            <div class="item">
+                               <div class="product">
+                                  <div class="product__name">
+                                    <span>Индикатор электромагнитных полей соэкс импульс</span>
+                                  </div>
+                                  <div class="product__image">
+                                    <img src="images/product.jpg" alt="img">
+                                  </div>
+                                  <div class="product_rate">
+                                    <ul class="rate-list">
+                                      <li><a href="#"></a></li>
+                                      <li><a href="#"></a></li>
+                                      <li><a href="#"></a></li>
+                                      <li><a href="#"></a></li>
+                                      <li><a href="#"></a></li>
+                                    </ul>
+                                  </div>
+                                  <div class="product__bottom">
+                                    <div class="price">
+                                      <span>5600 $</span>
+                                      <a href="" class="btn-product">Купить в 1 клик</a>
+                                    </div>
+                                    <div class="product-cart">
+                                      <a href="#" class="shoping-cart-link"></a>
+                                      <span>В корзину</span>
+                                    </div>
+                                    <a href="#" class="btn-hide">В корзину</a>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="item">
+                                <div class="product">
+                                  <div class="product__name">
+                                    <span>Индикатор электромагнитных полей соэкс импульс</span>
+                                  </div>
+                                  <div class="product__image">
+                                    <img src="images/product.jpg" alt="img">
+                                  </div>
+                                  <div class="product_rate">
+                                    <ul class="rate-list">
+                                      <li><a href="#"></a></li>
+                                      <li><a href="#"></a></li>
+                                      <li><a href="#"></a></li>
+                                      <li><a href="#"></a></li>
+                                      <li><a href="#"></a></li>
+                                    </ul>
+                                  </div>
+                                  <div class="product__bottom">
+                                    <div class="price">
+                                      <span>5600 $</span>
+                                      <a href="" class="btn-product">Купить в 1 клик</a>
+                                    </div>
+                                    <div class="product-cart">
+                                      <a href="#" class="shoping-cart-link"></a>
+                                      <span>В корзину</span>
+                                    </div>
+                                    <a href="#" class="btn-hide">В корзину</a>
+                                  </div>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+
+              </div>
+            <!-- //Rightcol -->
+          </div>
+        </div>
+      </div>
+</section>
+  <section class="well bg-primary">
+      <div class="container">
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+
+            <div class="row">
+              <div class="footer__brand">
+                <p class="brand__name">
+                  <a class="brand__name--link"  href="index.html"><img src="images/img-2.png" alt="img"></a>
+                </p>
+              </div>
+              <div class="social">
+              <h4>Соц.сети:</h4>
+               <ul class="social-list">
+                  <li class="social-list__item">
+                    <a href="#" class="social-list__item--link first"></a>
+                  </li>
+                  <li class="social-list__item">
+                    <a href="#" class="social-list__item--link second"></a>
+                  </li>
+                  <li class="social-list__item">
+                    <a href="#" class="social-list__item--link third"></a>
+                  </li>
+                   <li class="social-list__item">
+                    <a href="#" class="social-list__item--link fourth"></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="pay-block">
+                <h4>Форма оплаты:</h4>
+                <ul class="pay-systems">
+                  <li class="pay-systems__item">
+                    <a href="#" class="pay-systems__item--link master"></a>
+                  </li>
+                  <li class="pay-systems__item">
+                    <a href="#" class="pay-systems__item--link visa"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+            <div class="row">
+              <div class="footer-wrap">
+                  <div class="footer-title clearfix">
+                     <div class="footer-title__head">
+                          <h4>Информация:</h4>
+                      </div>
+                      <div class="footer-title__head">
+                          <h4>Меню:</h4>
+                      </div>
+                       <div class="footer-title__head">
+                          <h4>Контакты:</h4>
+                      </div>
+                  </div>
+                  <div class="foot-info clearfix">
+                      <ul class="foot-info__list">
+                        <li><a href="#">Как оформить заказ</a></li>
+                        <li><a href="#">Гарантия и возврат</a></li>
+                        <li><a href="#">Вопрос-ответ</a></li>
+                      </ul>
+                      <ul class="foot-info__list">
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Оплата и доставка</a></li>
+                        <li><a href="#">Статьи и обзоры</a></li>
+                      </ul>
+                       <ul class="foot-info__list">
+                        <li><span>Тел.:</span> <a href="callto:8800234234">8 800 23 42 34</a></li>
+                        <li><span>Тел.:</span> <a href="callto:8800234234">8 800 23 42 34</a></li>
+                        <li><span>E-mail:</span><a href="mailto:">ххххх@gmail.com</a></li>
+                      </ul>
+                  </div>
+                  <div class="footer-link clearfix">
+                    <a href="#" class="footer-link__btn">Закать обраный звонок</a>
+                    <a href="#" class="link">Договор публичной оферты</a>
+                  </div>
+               </div>
+             </div>
+          </div>
+      </div>
+  </section>
+  </main>
+
+  <!--========================================================
+                            FOOTER
+  =========================================================-->
+  <footer class="footer bl-hidden">
+    <div class="container">
+        <span id="copyright-year"></span>
+        <span>год</span>
+    </div>
+  </footer>
+
+
+  <!--========================================================
+                            MOBILE VERSION
+  =========================================================-->
+
+  <div class="mobile">
+
+  <!--========================================================
+                          MOBILE - HEADER
+  =========================================================-->
+
+    <header class="mobile-header clearfix table-block">
+      <div class="mobile-brand">
+        <h1 class="mobile-brand__name">
+          <a class="mobile-brand__name--link"  href="index.html"><img src="images/small-logo.png" alt="img"></a>
+        </h1>
+      </div>
+      <div class="town">
+        <!--     <div class="town-item">
+              <select>
+                <option value="1">Саранск</option>
+                <option value="2">Саранск</option>
+                <option value="3">Саранск</option>
+                <option value="4">Саранск</option>
+              </select>
+            </div> -->
+          <div class="main-item main-item-1">
+            <div class="icon">
+                    <img src="images/svg/town.svg" width="17" height="17"  alt="img">
+            </div>
+            <div class="city_name">Москва</div>
+            <div class="list_btn"></div>
+              <ul class="cities_list">
+                  <li><a href="#">Саранск</a></li>
+                  <li><a href="#">Москва</a></li>
+                  <li><a href="#">Казань</a></li>
+                  <li><a href="#">Санкт Петербург</a></li>
+                  <li><a href="#">Нижний Новгород</a></li>
+                  <li><a href="#">Пенза</a></li>
+                  <li><a href="#">Рузаевка</a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="mobile-basket">
+        <span class="mobile-basket__icon"></span>
+        <span class="mobile-basket__count">13</span>
+      </div>
+      <button class="toggle-menu"></button>
+    </header>
+    <div class="mobile-header__more" id="more">
+        <ul class="mobile-header__menu">
+          <li>
+            <a href="#">О компании</a>
+          </li>
+          <li>
+            <a href="#">Оплата и Доставка</a>
+          </li>
+          <li>
+            <a href="#">Статьи и обзоры</a>
+          </li>
+          <li>
+            <a href="#">Акции</a>
+          </li>
+        </ul>
+    </div>
+    <!--========================================================
+                            MOBILE - CONTENT
+    =========================================================-->
+        <section class="well bg-secondary">
+          <div class="mob-info">
+            <p>Экологические приборы, дозиметры,тестеры.</p>
+            <a href="callto:" class="num">8 945 775 662</a>
+          </div>
+        </section>
+         <div class="mob-category mob-container">
+            <a href="#" class="mob-category__btn">Категории товаров</a>
+             <ul class="mob-category__list">
+               <li><span class="icon1"></span><a href="#">Лечение ЛОР-заболеваний</a></li>
+               <li><span class="icon2"></span><a href="#">Лечение кожных заболеваний</a></li>
+               <li><span class="icon3"></span><a href="#">Обеззараживание помещений и поверхностей</a></li>
+             </ul>
+          </div>
+              <section class="well well__03">
+                      <div class="mob-container">
+                         <div class="breadcrumbs">
+                            <ul>
+                              <li><a class="prevCrumb" href="index.html">Главная</a></li>
+                              <li><span class="arwCrumb"></span></li>
+                              <li><a class="currentCrumb" href="#">Карточка товара</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="mob-container">
+                          <h2 class="descr-title">индикатор электромагнитных полей <br> соэкс импульс</h2>
+                          <span class="art-num">Артикул товара: 23 00 44</span>
+                        </div>
+                          <div class="tabs mob-container">
+                                <div class="tabs__content active">
+                                  <img class="content_img" src="images/gallery-product-big.jpg" alt="content" >
+                                </div>
+                                <div class="tabs__content ">
+                                  <img class="content_img" src="images/gallery-product-big.jpg" alt="content">
+                                </div>
+                                <div class="tabs__content">
+                                  <img class="content_img" src="images/gallery-product-big.jpg" alt="content">
+                                </div>
+                                <ul class="tabs__caption">
+                                    <li class="active">
+                                      <div class="content_img_small" style="background-image: url(images/mobil-tabs.jpg)">
+                                      </div>
+                                    </li>
+                                    <li class="">
+                                      <div class="content_img_small" style="background-image: url(images/mobil-tabs.jpg)">
+                                      </div>
+                                    </li>
+                                    <li class="">
+                                      <div class="content_img_small" style="background-image: url(images/mobil-tabs.jpg)">
+                                      </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        <div class="product-descr mob-container">
+                          <h2 class="about-title">Сферы применения:</h2>
+                            <div class="about">
+                                <p>в особенности же рамки и место обучения кадров играет важную роль в формировании дальнейших.  особенности же рамки и место обучения кадров играет важную.</p>
+                            </div>
+                            <div class="product-info clearfix">
+                              <span class="status">Товар в наличии</span>
+                                <div class="product_rate">
+                                    <ul class="rate-list">
+                                      <li><a href="#"></a></li>
+                                      <li><a href="#"></a></li>
+                                      <li><a href="#"></a></li>
+                                      <li><a href="#"></a></li>
+                                      <li><a href="#"></a></li>
+                                    </ul>
+                                </div>
+                              </div>
+                              <div class="product-bottom clearfix">
+                                  <div class="product_right clearfix">
+                                      <div class="garant"><span class="icon"><img src="images/guarant-icon.png" alt=""></span><span class="cnt">Гарантия <br> 1год</span></div>
+                                      <div class="madein"><span class="icon"><img src="images/flag-icon.png" alt=""></span><span class="cnt">Cделано <br> в России</span></div>
+                                  </div>
+                                <div class="product_price-box clearfix">
+                                    <h3 class="product_price__title">Цена сегодня:</h3>
+                                    <div class="inner-price">
+                                      <span class="old-price">7000 $</span>
+                                      <span class="new-price">5600 $</span>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="product-btn-box mob-container">
+                                <a href="" class="btn-3">Купить в 1 клик</a>
+                                <a href="#" class="btn-2">В корзину</a>
+                              </div>
+                          </div>
+                            <div class="resp-tabs">
+                              <ul class="resp-tabs-list mob-container">
+                                <li><h2 class="tabs-title">Описание</h2></li>
+                                <li><h2 class="tabs-title">Тех.характеристики</h2></li>
+                                <li><h2 class="tabs-title">Отзывы</h2></li>
+                              </ul>
+                              <div class="resp-tabs-container mob-container">
+                                <div class="tabs_cnt">
+                                 <h2 class="cnt-title">Описание товара</h2>
+                                  <p class="tabs_cnt_description">Жили у бабуси Два веселых гуся:Один — серый,Другой — белый —Два веселых гуся.Вытянули шеи —У кого длиннее? Один — серый,Другой — белый —У кого длиннее?Мыли гуси лапкиВ луже у канавки.Один — серый,Другой — белый —Спрятались в канавке.Вот кричит бабуся:Ой, пропали гуси!Один — серый,Другой — белый —Гуси мои, гуси. Выходили гуси Кланялись бабусе Один — серый Другой — белый  Кланялись бабусе.</p>
+                                </div>
+                                <div class="tabs_cnt">
+                                    <ul class="tabs-list_product">
+                                      <li><span>Наименование</span><span>Индикатор Соэкс</span></li>
+                                      <li><span>Наименование</span><span>Индикатор Соэкс</span></li>
+                                      <li><span>Наименование</span><span>Индикатор Соэкс</span></li>
+                                      <li><span>Наименование</span><span>Индикатор Соэкс</span></li>
+                                      <li><span>Наименование</span><span>Индикатор Соэкс</span></li>
+                                      <li><span>Наименование</span><span>Индикатор Соэкс</span></li>
+                                      <li><span>Наименование</span><span>Индикатор Соэкс</span></li>
+                                      <li><span>Наименование</span><span>Индикатор Соэкс</span></li>
+                                      <li><span>Наименование</span><span>Индикатор Соэкс</span></li>
+                                      <li><span>Наименование</span><span>Индикатор Соэкс</span></li>
+                                      <li><span>Наименование</span><span>Индикатор Соэкс</span></li>
+                                  </ul>
+                                 </div>
+                                <div class="tabs_cnt">
+                                    <h2 class="cnt-title">Оставить отзыв</h2>
+                                    <p>Задача организации, в особенности же рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развития. Идейные соображения высшего.</p>
+                                      <div class="review-form feedback-form mob-container">
+                                       <form>
+                                          <div class="input-block clearfix">
+                                            <div class="left-block">
+                                              <input type="text" placeholder="Ваше имя">
+                                              <input type="text" placeholder="E-mail" class="offset-20">
+                                            </div>
+                                            <div class="left-block">
+                                              <div class="input-block">
+                                                <textarea placeholder="Сообщения"></textarea>
+                                                <div class="input-block clearfix">
+                                                    <input type="submit" value="Отправить" class="blue-btn">
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </form>
+                                    </div>
+                                    <div class="testimonials">
+                                        <div class="box clearfix">
+                                          <div class="box__aside">
+                                            <div class="img"></div>
+                                            <span class="date">12.12.12</span>
+                                          </div>
+                                          <div class="box__cnt">
+                                            <span class="name">Иванов Иван Иванович</span>
+                                            <p class="quote">Задача организации, в особенности же рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развития.</p>
+                                          </div>
+                                        </div>
+                                        <div class="box clearfix">
+                                          <div class="box__aside">
+                                            <div class="img"></div>
+                                            <span class="date">12.12.12</span>
+                                          </div>
+                                          <div class="box__cnt">
+                                            <span class="name">Иванов Иван Иванович</span>
+                                            <p class="quote">Задача организации, в особенности же рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развития.</p>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="social">
+                                      <h4>Поделиться:</h4>
+                                     <ul class="social-list">
+                                        <li class="social-list__item">
+                                          <a href="#" class="social-list__item--link first"></a>
+                                        </li>
+                                        <li class="social-list__item">
+                                          <a href="#" class="social-list__item--link second"></a>
+                                        </li>
+                                        <li class="social-list__item">
+                                          <a href="#" class="social-list__item--link third"></a>
+                                        </li>
+                                         <li class="social-list__item">
+                                          <a href="#" class="social-list__item--link fourth"></a>
+                                        </li>
+                                      </ul>
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                      </section>
+                      <section class="bg-secondary1">
+                        <div class="download">
+                          <div class="instruction"><a href="#">Скачать инструкцию <br>по применению</a></div>
+                          <div class="certificat"><a href="#">Сертификат Соответсвия</a></div>
+                        </div>
+                      </section>
+                       <div class="banner-box">
+                        <div class="banner"><a href="#"><img src="images/banner.jpg" height="156" alt="img"></a></div>
+                         <div class="mob-container">
+                            <div class="box-2 clearfix">
+                                <div class="box-2__aside">
+                                    <div class="img"></div>
+                                </div>
+                                  <div class="box-2__cnt">
+                                      <p class="slogan">Если у вас остались вопросы,звоните прямо сейчас</p>
+                                  </div>
+                                  <div class="box-2-btm clearfix">
+                                    <div class="bottom-tel">
+                                      <a href="callto:89457756622" class="tel-1">8 945 775 6622</a>
+                                      <span>Звонок по России бесплатный.</span>
+                                    </div>
+                                    <div class="bottom-time">
+                                      <span>Без выходных</span>
+                                      <div class="hours">
+                                        <div class="bold">c
+                                          <span>10<small>00</small></span> до
+                                          <span>20 <small>00</small></span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                         <div class="mob-title-block">
+                            <h2>Похожие товары</h2>
+                        </div>
+                        <section class="well__03">
+                          <div class="mob-carousel product-box mob-container">
+                              <div class="product">
+                                   <div class="product__image">
+                                      <img src="images/product-2.jpg" alt="img">
+                                    </div>
+                                     <div class="product__name">
+                                      <span>Индикатор электромагнитных полей соэкс импульс</span>
+                                    </div>
+                                    <div class="product_rate">
+                                      <ul class="rate-list">
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                      </ul>
+                                    </div>
+                                    <div class="price">
+                                        <span>5600  $</span>
+                                    </div>
+                                  <div class="product-btn-box mob-container">
+                                    <a href="" class="btn-3">Купить в 1 клик</a>
+                                    <a href="#" class="btn-2">В корзину</a>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="mob-carousel product-box mob-container offset-3">
+                              <div class="product">
+                                   <div class="product__image">
+                                      <img src="images/product-2.jpg" alt="img">
+                                    </div>
+                                     <div class="product__name">
+                                      <span>Индикатор электромагнитных полей соэкс импульс</span>
+                                    </div>
+                                    <div class="product_rate">
+                                      <ul class="rate-list">
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                      </ul>
+                                    </div>
+                                    <div class="price">
+                                        <span>5600  $</span>
+                                    </div>
+                                  <div class="product-btn-box mob-container">
+                                    <a href="" class="btn-3">Купить в 1 клик</a>
+                                    <a href="#" class="btn-2">В корзину</a>
+                                  </div>
+                              </div>
+                          </div>
+                        </section>
+                        <section class="well__04 bg-primary">
+                          <div class="mob-lists-info mob-container">
+                             <div class="foot-info clearfix">
+                                <ul class="foot-info__list pushleft">
+                                  <li><a href="#">Как оформить заказ</a></li>
+                                  <li><a href="#">Гарантия и возврат</a></li>
+                                  <li><a href="#">Вопрос-ответ</a></li>
+                                </ul>
+                                <ul class="foot-info__list pushright">
+                                  <li><a href="#">О компании</a></li>
+                                  <li><a href="#">Оплата и доставка</a></li>
+                                  <li><a href="#">Статьи и обзоры</a></li>
+                                  <li><a href="#">Акции</a></li>
+                                </ul>
+                              </div>
+                          </div>
+                          <div class="mob-social mob-container">
+                             <div class="social">
+                                <ul class="social-list">
+                                    <li class="social-list__item">
+                                      <a href="#" class="social-list__item--link first"></a>
+                                    </li>
+                                    <li class="social-list__item">
+                                      <a href="#" class="social-list__item--link second"></a>
+                                    </li>
+                                    <li class="social-list__item">
+                                      <a href="#" class="social-list__item--link third"></a>
+                                    </li>
+                                     <li class="social-list__item">
+                                      <a href="#" class="social-list__item--link fourth"></a>
+                                    </li>
+                                  </ul>
+                              </div>
+                            </div>
+                            <div class="mob-paysystem-box clearfix mob-container">
+                              <h4>Форма оплаты</h4>
+                              <ul class="pay-systems pushleft">
+                                <li class="pay-systems__item">
+                                  <a href="#" class="pay-systems__item--link master"></a>
+                                </li>
+                                <li class="pay-systems__item">
+                                  <a href="#" class="pay-systems__item--link visa"></a>
+                                </li>
+                              </ul>
+                              <a href="#" class="link">Договор публичной <br> оферты</a>
+                            </div>
+                            <div class="on-pc">
+                              <a href="#">Перейти в PC версию сайта</a>
+                            </div>
+                      </section>
+                    <div class="mobil-footer">
+                       <footer class="footer">
+                          <span>2016</span>
+                          <span>год</span>
+                      </footer>
+                    </div>
+              </div>
+    </div>
+<!-- //Page -->
+
+<script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

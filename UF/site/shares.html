@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Post-large</title>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mailform.css"/>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-migrate-1.2.1.js"></script>
+
+  <!--[if lt IE 9]>
+  <html class="lt-ie9">
+  <div style=' clear: both; text-align:center; position: relative;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
+      <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+    </a>
+  </div>
+  <script src="js/html5shiv.js"></script>
+  <![endif]-->
+
+ <script src='js/device.min.js'></script>
+
+</head>
+<body>
+<div class="page">
+
+<!--========================================================
+                            HEADER
+  =========================================================-->
+  <header class="header bl-hidden">
+      <div class="head-main row">
+        <div class="container">
+          <div class="inline-box col-w-100">
+              <div class="inline-box__cnt col-w-20 col-sm-w-25 pd-r-20 row">
+                  <div class="col-sm-12 col-xs-12">
+                    <div class="main-item main-item-1">
+                         <div class="icon">
+                          <img src="images/svg/town.svg" width="17" height="17"  alt="img">
+                        </div>
+                        <div class="city_name">Москва</div>
+                        <div class="list_btn"></div>
+                        <ul class="cities_list">
+                            <li><a href="#">Саранск</a></li>
+                            <li><a href="#">Москва</a></li>
+                            <li><a href="#">Казань</a></li>
+                            <li><a href="#">Санкт Петербург</a></li>
+                            <li><a href="#">Нижний Новгород</a></li>
+                            <li><a href="#">Пенза</a></li>
+                            <li><a href="#">Рузаевка</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="inline-box__cnt col-w-80 col-sm-w-75 row">
+                  <div class="col-sm-4 col-xs-4">
+                    <a href="#" class="main-item"><span><img src="images/head-icon2.png" alt="img"></span>Как оформить заказ?</a>
+                  </div>
+                  <div class="col-sm-4 col-xs-4 pd-l-10">
+                  <a href="#" class="main-item"><span><img src="images/head-icon3.png" alt="img"></span>Гарантия и возврат</a>
+                  </div>
+                  <div class="col-sm-4 col-xs-4 pd-l-10">
+                    <a href="#" class="main-item"><span><img src="images/head-icon4.png" alt="img"></span>Вопрос-ответ</a>
+                  </div>
+               </div>
+            </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="head-bottom row">
+            <div class="col-w-20 col-sm-w-25 pd-r-20 col-xs-4 col-sm-4">
+              <div class="header__brand brand">
+                <p class="brand__name">
+                  <a class="brand__name--link"  href="index.html"><img src="images/logo.png" alt="img"></a>
+                </p>
+              </div>
+            </div>
+            <div class="col-xs-8 col-sm-8 col-w-80 col-sm-w-75">
+              <div class="row">
+                <div class="col-xs-4 col-sm-4">
+                  <div class="info-search">
+                    <p>Экологические приборы,<br>дозиметры, тестеры.</p>
+                    <div class="work-time">
+                      <div class="time">
+                        <span class="icon-clock"></span>
+                        <div class="time_wrapp">
+                          <span>Режим работы</span>
+                          <div class="hours">
+                            <div class="bold">
+                              <span class="first">8 <small class="min1">30</small></span><hr>
+                              <span>20 <small class="min2">00</small></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                     </div>
+                     <!-- Search -->
+                    <div class="top_header__search_block">
+                        <form action="GET">
+                            <input type="search" placeholder="Поиск по сайту" class="search__input">
+                            <input type="submit" value="" class="search__submit">
+                        </form>
+                    </div>
+                    <!-- // Search -->
+                  </div>
+                </div>
+                  <div class="col-xs-4 col-sm-4 pd-l-10">
+                      <div class="top-contacts">
+                        <span class="text-1">звонок по россии бесплатный</span>
+                        <span class="for-client">Для клиентов из регионов:</span>
+                          <a href="callto:89457756622" class="tel-1">8 945 775 6622</a>
+
+                          <span class="for-client">Для клиентов из Москвы</span>
+                          <a href="callto:8800234234" class="tel-2">8 800 23 42 34</a>
+                          <a href="#" class="callback">заказать обратный звонок</a>
+                      </div>
+                  </div>
+                  <div class="col-xs-4 col-sm-4 pd-l-10 pd-sm-0">
+                    <div class="basket-head">
+                        <div class="bask-list">
+                          <span class="basket-icon"></span>
+                          <div class="basket-cnt">
+                            <span class="basket-title">ваша корзина</span>
+                              <ul>
+                                <li><span>Товаров:</span><span class="count">2</span></li>
+                                <li><span>Сумма:</span><span class="count">12 444 $</span></li>
+                              </ul>
+                          </div>
+                        </div>
+                        <a class="btn-basket btn">оформить заказ</a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+      </div>
+  </header>
+  <!--========================================================
+                            CONTENT
+  =========================================================-->
+  <main class="main bl-hidden">
+      <section class="well well__01">
+        <div class="container">
+          <!-- Sidebar -->
+          <aside class="sidebar">
+          <!-- category -->
+          <div class="category">
+              <div class="category__title">
+                <h4>категории товаров:</h4>
+              </div>
+                <ul class="category__list">
+                  <li class="active"><span class="img-1"></span><a href="#">Лечение Лор-заболеваний</a></li>
+                  <li><span class="img-2"></span><a href="#">Лечение кожных заболеваний</a></li>
+                  <li><span class="img-3"></span><a href="#">Обеззараживание помещений и поверхностей</a></li>
+                </ul>
+            </div>
+            <!-- // category -->
+            <!-- widget -->
+            <div class="widget">
+              <img src="images/widget.png" alt="img">
+            </div>
+            <!--// widget -->
+          </aside>
+          <!--// Sidebar -->
+          <!-- Rightcol -->
+            <div class="right-cols">
+                  <nav class="nav clearfix">
+                      <div class="icon-block"><a href="index.html"></a></div>
+                      <ul class="menu" data-type="navbar">
+                        <li class="menu__item menu__active">
+                          <a href="#top" class="menu__item--link menu__active--link">О компании</a>
+                        </li>
+                        <li class="menu__item">
+                          <a href="index-1.html" class="menu__item--link">Оплата и доставка</a>
+                        </li>
+                        <li class="menu__item">
+                          <a href="#s_2" class="menu__item--link">Статьи и обзоры</a>
+                        </li>
+                        <li class="menu__item">
+                          <a href="#s_3" class="menu__item--link">Акции</a>
+                        </li>
+                      </ul>
+                  </nav>
+                  <div class="breadcrumbs">
+                    <ul>
+                      <li><a class="prevCrumb" href="index.html">Главная</a></li>
+                      <li><span class="arwCrumb"></span></li>
+                      <li><a class="currentCrumb" href="#">Акции</a></li>
+                    </ul>
+                  </div>
+                  <div class="shares-wrapp">
+                    <div class="shares-title">
+                      <h2>Акции</h2>
+                    </div>
+                    <div class="share-box">
+                      <a href="#"><img src="images/shares-banner.jpg" alt="img"></a>
+                      <div class="share-status">
+                        <a href="" class="active">Акция Активна</a>
+                      </div>
+                    </div>
+                     <div class="share-box">
+                      <a href="#"><img src="images/shares-banner.jpg" alt="img"></a>
+                      <div class="share-status">
+                        <a href="" class="not-active">Акция завершена</a>
+                      </div>
+                    </div>
+                     <div class="share-box">
+                      <a href="#"><img src="images/shares-banner.jpg" alt="img"></a>
+                      <div class="share-status">
+                        <a href="" class="not-active">Акция завершена</a>
+                      </div>
+                    </div>
+                       <nav class="pagination">
+                          <ul class="pagination-list">
+                            <li class="first-link"><a href="#" class="first-link"></a></li>
+                            <li class="pagination-list__item current"><a href="#" class="pagination-list__item--link">1</a></li>
+                            <li class="pagination-list__item"><a href="#" class="pagination-list__item--link">2</a></li>
+                            <li class="pagination-list__item"><a href="#" class="pagination-list__item--link">3</a></li>
+                            <li class="pagination-list__item"><a href="#" class="pagination-list__item--link">4</a></li>
+                            <li class="pagination-list__item"><a href="#" class="pagination-list__item--link">5</a></li>
+                            <li class="last-link"><a href="#" class="last-link"></a></li>
+                          </ul>
+                        </nav>
+                  </div>
+
+              </div>
+              <!-- //Rightcol -->
+          </div>
+      </section>
+    <section class="well bg-primary">
+        <div class="container">
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+              <div class="row">
+                <div class="footer__brand">
+                  <p class="brand__name">
+                    <a class="brand__name--link"  href="index.html"><img src="images/img-2.png" alt="img"></a>
+                  </p>
+                </div>
+                <div class="social">
+                <h4>Соц.сети:</h4>
+                 <ul class="social-list">
+                    <li class="social-list__item">
+                      <a href="#" class="social-list__item--link first"></a>
+                    </li>
+                    <li class="social-list__item">
+                      <a href="#" class="social-list__item--link second"></a>
+                    </li>
+                    <li class="social-list__item">
+                      <a href="#" class="social-list__item--link third"></a>
+                    </li>
+                     <li class="social-list__item">
+                      <a href="#" class="social-list__item--link fourth"></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pay-block">
+                  <h4>Форма оплаты:</h4>
+                  <ul class="pay-systems">
+                    <li class="pay-systems__item">
+                      <a href="#" class="pay-systems__item--link master"></a>
+                    </li>
+                    <li class="pay-systems__item">
+                      <a href="#" class="pay-systems__item--link visa"></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+              <div class="row">
+                <div class="footer-wrap">
+                    <div class="footer-title clearfix">
+                       <div class="footer-title__head">
+                            <h4>Информация:</h4>
+                        </div>
+                        <div class="footer-title__head">
+                            <h4>Меню:</h4>
+                        </div>
+                         <div class="footer-title__head">
+                            <h4>Контакты:</h4>
+                        </div>
+                    </div>
+                    <div class="foot-info clearfix">
+                        <ul class="foot-info__list">
+                          <li><a href="#">Как оформить заказ</a></li>
+                          <li><a href="#">Гарантия и возврат</a></li>
+                          <li><a href="#">Вопрос-ответ</a></li>
+                        </ul>
+                        <ul class="foot-info__list">
+                          <li><a href="#">О компании</a></li>
+                          <li><a href="#">Оплата и доставка</a></li>
+                          <li><a href="#">Статьи и обзоры</a></li>
+                        </ul>
+                         <ul class="foot-info__list">
+                          <li><span>Тел.:</span> <a href="callto:8800234234">8 800 23 42 34</a></li>
+                          <li><span>Тел.:</span> <a href="callto:8800234234">8 800 23 42 34</a></li>
+                          <li><span>E-mail:</span><a href="mailto:">ххххх@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-link clearfix">
+                      <a href="#" class="footer-link__btn">Закать обраный звонок</a>
+                      <a href="#" class="link">Договор публичной оферты</a>
+                    </div>
+                 </div>
+               </div>
+            </div>
+        </div>
+    </section>
+  </main>
+
+  <!--========================================================
+                            FOOTER
+  =========================================================-->
+  <footer class="footer bl-hidden">
+    <div class="container">
+        <span id="copyright-year"></span>
+        <span>год</span>
+    </div>
+  </footer>
+
+
+  <!--========================================================
+                            MOBILE VERSION
+  =========================================================-->
+
+  <div class="mobile">
+
+  <!--========================================================
+                          MOBILE - HEADER
+  =========================================================-->
+
+    <header class="mobile-header clearfix table-block">
+      <div class="mobile-brand">
+        <h1 class="mobile-brand__name">
+          <a class="mobile-brand__name--link"  href="index.html"><img src="images/small-logo.png" alt="img"></a>
+        </h1>
+      </div>
+      <div class="town">
+       <!--      <div class="town-item">
+              <select>
+                <option value="1">Саранск</option>
+                <option value="2">Саранск</option>
+                <option value="3">Саранск</option>
+                <option value="4">Саранск</option>
+              </select>
+            </div> -->
+                <div class="main-item main-item-1">
+                 <div class="icon">
+                    <img src="images/svg/town.svg" width="17" height="17"  alt="img">
+                </div>
+                  <div class="city_name">Москва</div>
+                  <div class="list_btn"></div>
+                    <ul class="cities_list">
+                        <li><a href="#">Саранск</a></li>
+                        <li><a href="#">Москва</a></li>
+                        <li><a href="#">Казань</a></li>
+                        <li><a href="#">Санкт Петербург</a></li>
+                        <li><a href="#">Нижний Новгород</a></li>
+                        <li><a href="#">Пенза</a></li>
+                        <li><a href="#">Рузаевка</a></li>
+                    </ul>
+                </div>
+      </div>
+      <div class="mobile-basket">
+        <span class="mobile-basket__icon"></span>
+        <span class="mobile-basket__count">13</span>
+      </div>
+      <button class="toggle-menu"></button>
+    </header>
+    <div class="mobile-header__more" id="more">
+        <ul class="mobile-header__menu">
+          <li>
+            <a href="#">О компании</a>
+          </li>
+          <li>
+            <a href="#">Оплата и Доставка</a>
+          </li>
+          <li>
+            <a href="#">Статьи и обзоры</a>
+          </li>
+          <li>
+            <a href="#">Акции</a>
+          </li>
+        </ul>
+    </div>
+    <!--========================================================
+                            MOBILE - CONTENT
+    =========================================================-->
+        <section class="well bg-secondary">
+          <div class="mob-info">
+            <p>Экологические приборы, дозиметры,тестеры.</p>
+            <a href="callto:" class="num">8 945 775 662</a>
+          </div>
+        </section>
+         <div class="mob-category mob-container">
+            <a href="#" class="mob-category__btn">Категории товаров</a>
+             <ul class="mob-category__list">
+               <li><span class="icon1"></span><a href="#">Лечение ЛОР-заболеваний</a></li>
+               <li><span class="icon2"></span><a href="#">Лечение кожных заболеваний</a></li>
+               <li><span class="icon3"></span><a href="#">Обеззараживание помещений и поверхностей</a></li>
+             </ul>
+          </div>
+          <div class="mob-container">
+             <div class="breadcrumbs">
+                <ul>
+                  <li><a class="prevCrumb" href="index.html">Главная</a></li>
+                  <li><span class="arwCrumb"></span></li>
+                  <li><a class="currentCrumb" href="#">Акции</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="shares-wrapp mob-container">
+                  <div class="shares-title">
+                    <h2>Акции</h2>
+                  </div>
+                <div class="share-box">
+                  <a href="#"><img src="images/shares-banner-small.jpg" alt="img"></a>
+                  <div class="share-status">
+                    <a href="" class="active">Акция Активна</a>
+                  </div>
+                </div>
+                <div class="share-box">
+                  <a href="#"><img src="images/shares-banner-small.jpg" alt="img"></a>
+                  <div class="share-status">
+                    <a href="" class="active">Акция Активна</a>
+                  </div>
+                </div>
+                <div class="share-box">
+                  <a href="#"><img src="images/shares-banner-small.jpg" alt="img"></a>
+                  <div class="share-status">
+                    <a href="" class="active">Акция Активна</a>
+                  </div>
+                </div>
+                <div class="share-box">
+                  <a href="#"><img src="images/shares-banner-small.jpg" alt="img"></a>
+                  <div class="share-status">
+                    <a href="" class="active">Акция Активна</a>
+                  </div>
+                </div>
+                <div class="share-box">
+                  <a href="#"><img src="images/shares-banner-small.jpg" alt="img"></a>
+                  <div class="share-status">
+                    <a href="" class="active">Акция Активна</a>
+                  </div>
+                </div>
+                <div class="share-box">
+                  <a href="#"><img src="images/shares-banner-small.jpg" alt="img"></a>
+                  <div class="share-status">
+                    <a href="" class="active">Акция Активна</a>
+                  </div>
+                </div>
+
+              </div>
+
+            <section class="well__04 bg-primary">
+            <div class="mob-lists-info mob-container">
+               <div class="foot-info clearfix">
+                  <ul class="foot-info__list pushleft">
+                    <li><a href="#">Как оформить заказ</a></li>
+                    <li><a href="#">Гарантия и возврат</a></li>
+                    <li><a href="#">Вопрос-ответ</a></li>
+                  </ul>
+                  <ul class="foot-info__list pushright">
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Оплата и доставка</a></li>
+                    <li><a href="#">Статьи и обзоры</a></li>
+                    <li><a href="#">Акции</a></li>
+                  </ul>
+                </div>
+            </div>
+            <div class="mob-social mob-container">
+               <div class="social">
+                  <ul class="social-list">
+                      <li class="social-list__item">
+                        <a href="#" class="social-list__item--link first"></a>
+                      </li>
+                      <li class="social-list__item">
+                        <a href="#" class="social-list__item--link second"></a>
+                      </li>
+                      <li class="social-list__item">
+                        <a href="#" class="social-list__item--link third"></a>
+                      </li>
+                       <li class="social-list__item">
+                        <a href="#" class="social-list__item--link fourth"></a>
+                      </li>
+                    </ul>
+                </div>
+              </div>
+              <div class="mob-paysystem-box clearfix mob-container">
+                <h4>Форма оплаты</h4>
+                <ul class="pay-systems pushleft">
+                  <li class="pay-systems__item">
+                    <a href="#" class="pay-systems__item--link master"></a>
+                  </li>
+                  <li class="pay-systems__item">
+                    <a href="#" class="pay-systems__item--link visa"></a>
+                  </li>
+                </ul>
+                <a href="#" class="link">Договор публичной <br> оферты</a>
+              </div>
+              <div class="on-pc">
+                <a href="#">Перейти в PC версию сайта</a>
+              </div>
+        </section>
+          <div class="mobil-footer">
+             <footer class="footer">
+                <span>2016</span>
+                <span>год</span>
+            </footer>
+          </div>
+
+        </div>
+        <!-- //Mobile -->
+</div>
+<!-- //Page -->
+
+<script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
